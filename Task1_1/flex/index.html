@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail on Flex</title>
+  <meta name="description" content="Create using “Holy Grail” web design layout Flex">
+  <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+  <div class="wrapper">
+    <header class="flex__header">
+      <h3>Header</h3>
+    </header>
+    <main class="flex__main">
+      <nav class="flex__nav">Navigation</nav>    
+      <article class="flex__article">
+        <h3>Что такое макет «Святой Грааль»?</h3>
+        <p>Святой Грааль это макет, который состоит из четырех разделов — header, footer, основное содержимое и две боковых колонки, по одной с каждой стороны. Макет так же придерживается следующих правил:</p>
+        <ul>
+          <li>«Плавающая» ширина центральной части и фиксированная ширина сайдбаров</li>
+          <li>Центральная часть в разметке должна идти раньше, чем два сайдбара (но после header’а)</li>
+          <li>Все три колонки должны быть одинаковой высоты, вне зависимости от содержимого</li>
+          <li>Футер должен быть всегда прижат к низу, даже если контент не заполняет вьюпорт</li>
+          <li>Макет должен быть отзывчивым, все разделы должны схлопываться в один столбец на маленьких экранах</li>
+        </ul>
+      </article>      
+      <aside class="flex__aside">Related link
+      </aside>
+    </main>
+    <footer class="flex__footer">
+      <h3>Footer</h3>
+    </footer>
+  </div>
+</body>
+</html>

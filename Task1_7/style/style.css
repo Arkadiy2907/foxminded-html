@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrap {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;   
+}
+
+.wrapButton__text { 
+  position: relative;
+  padding: 6px 6.5px 8.5px;
+  border: 2px solid #666666;   
+  border-radius: 16px; 
+}
+
+.wrapButton__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;   
+  border: 6px solid #CBCBCB;   
+  border-radius: 17px;       
+}
+
+.wrapButton__text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;   
+  border: 2px solid white;   
+  border-radius: 15px;   
+  z-index: 1;     
+}
+
+.wrapButton__text strong::before, .wrapButton__text strong::after {
+  content: "\2605";
+  font-size: 29px;
+  color: #888888; 
+  padding: 0 12px;
+}
+
+.wrapButton__text strong {
+  display: flex;
+  align-items: center;   
+  font-size: 22px;   
+  text-transform: uppercase;
+  color: #555555;  
+  padding: 9px 5px; 
+  background: linear-gradient(to bottom, #E3E3E3 0, #D3D3D3 48%, #C2C2C2 52%, #AFAFAF 100%); 
+  border-style: solid;
+  border: 1px solid rgb(163, 163, 163);  
+  border-radius: 10px;
+  box-shadow: 0 3.5px 5px -3px #000000;  
+}
+
+.wrapButton__text:hover {  
+  animation: pulsate 1.2s linear infinite;  
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff; text-shadow: 0 -1px rgb(221, 221, 221), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+
